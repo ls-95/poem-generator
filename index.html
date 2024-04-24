@@ -10,6 +10,7 @@
       href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
       rel="stylesheet"
     />
+    <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
     <title>AI Poem Generator</title>
   </head>
   <body>
@@ -20,7 +21,7 @@
     </div>
     <div class="container">
       <main>
-        <form>
+        <form id="poem-generator-form">
           <input
             type="text"
             placeholder="Enter the topic of your poem.."
@@ -32,11 +33,7 @@
           <input type="submit" class="submit-button" />
         </form>
 
-        <div class="poem">
-          Shall I compare thee to a summer’s day?
-          <br />
-          Thou art more lovely and more temperate.
-        </div>
+        <div class="poem" id="poem"></div>
       </main>
     </div>
     <footer>
@@ -45,7 +42,8 @@
       and is open-sourced on
       <a href="https://github.com/ls-95/poem-generator" target="_blank"
         >GitHub</a
-      >and is hosted on
+      >
+      and is hosted on
       <a href="https://english-poem-generator-ai.netlify.app/" target="_blank"
         >Netlify</a
       >
