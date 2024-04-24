@@ -1,0 +1,78 @@
+body {
+  font-family: "Montserrat", sans-serif;
+  line-height: 2;
+  background-image: linear-gradient(
+    90deg,
+    rgba(173, 252, 234, 0.6) 26.8%,
+    rgba(192, 229, 246, 0.6) 64%
+  );
+}
+
+.heading {
+  margin: 120px auto 50px auto;
+  max-width: 600px;
+  text-align: center;
+  border-radius: 8px;
+  font-size: 22px;
+}
+
+form {
+  padding: 30px;
+  display: flex;
+}
+
+.instructions {
+  padding: 16px;
+  border: 3px solid #000;
+  width: 80%;
+  font-size: 16px;
+  border-radius: 50px;
+  line-height: 20px;
+  color: #272044;
+}
+
+.instructions::placeholder {
+  color: rgba(0, 0, 0, 0.7);
+}
+
+.submit-button {
+  margin-left: 10px;
+  background-color: #000;
+  color: white;
+  border: none;
+  border-radius: 50px;
+  padding: 14px 24px;
+  width: 150px;
+  font-size: 16px;
+}
+
+.container {
+  margin: 0px auto;
+  max-width: 700px;
+  background-color: white;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  text-align: center;
+  border-radius: 8px;
+  padding: 10px 40px 50px 40px;
+  border: 3px solid #000;
+}
+
+.poem {
+  font-size: 16px;
+  padding: 20px;
+  border-left: 3px solid #000;
+  text-align: left;
+  margin-top: 30px;
+}
+
+a {
+  color: #000;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+footer {
+  text-align: center;
+  font-size: 14px;
+  margin-top: 30px;
+}

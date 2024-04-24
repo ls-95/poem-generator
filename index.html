@@ -4,27 +4,41 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="src/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
     <title>AI Poem Generator</title>
   </head>
   <body>
-    <header>
-      <h1>Welcome to the Poem Generator</h1>
-    </header>
-    <main>
-      <form>
-        <input
-          type="text"
-          placeholder="Enter the topic of your poem"
-          autofocus
-        />
-        <input type="submit" value="Submit" />
-        <div>
+    <div>
+      <header class="heading">
+        <h1>Welcome to the Poem Generator</h1>
+      </header>
+    </div>
+    <div class="container">
+      <main>
+        <form>
+          <input
+            type="text"
+            placeholder="Enter the topic of your poem.."
+            autofocus
+            required
+            autocomplete="off"
+            class="instructions"
+          />
+          <input type="submit" class="submit-button" />
+        </form>
+
+        <div class="poem">
           Shall I compare thee to a summer’s day?
           <br />
           Thou art more lovely and more temperate.
         </div>
-      </form>
-    </main>
+      </main>
+    </div>
     <footer>
       This AI project was coded by
       <a href="https://github.com/ls-95" target="_blank">Laetitia Saunders</a>
@@ -36,6 +50,7 @@
         >Netlify</a
       >
     </footer>
+
     <script src="src/index.js"></script>
   </body>
 </html>
