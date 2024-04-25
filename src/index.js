@@ -5,8 +5,6 @@ function displayPoem(response) {
     delay: 50,
     cursor: "",
   });
-
-  console.log("generated poem");
 }
 
 function generatePoem(event) {
