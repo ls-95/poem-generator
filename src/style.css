@@ -32,7 +32,7 @@ form {
 }
 
 .instructions::placeholder {
-  color: rgba(0, 0, 0, 0.7);
+  color: rgba(0, 0, 0, 0.5);
 }
 
 .submit-button {
@@ -65,6 +65,10 @@ form {
   margin-top: 30px;
 }
 
+.hidden {
+  display: none;
+}
+
 a {
   color: #000;
   font-weight: bold;
@@ -75,4 +79,19 @@ footer {
   text-align: center;
   font-size: 14px;
   margin-top: 30px;
+}
+
+.blink {
+  animation: blink-animation 1s steps(5, start) infinite;
+}
+
+@keyframes blink-animation {
+  to {
+    visibility: hidden;
+  }
+}
+@-webkit-keyframes blink-animation {
+  to {
+    visibility: hidden;
+  }
 }
